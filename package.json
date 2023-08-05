@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ts-node src/index.ts"
+    "start": "nodemon --esm ./src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
   "devDependencies": {
     "@types/node": "^20.4.7",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "langchain": "^0.0.122"
   }
 }
